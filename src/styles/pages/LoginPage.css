@@ -1,0 +1,109 @@
+:root {
+    --primary-font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.form-login-container {
+    height: 100vh;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    font-family: var(--primary-font);
+    letter-spacing: 0.3px;
+}
+
+.header-container svg {
+    cursor: pointer; /* Change cursor to pointer for SVGs */
+}
+
+
+.form-title {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    text-align: left; /* Align text to the left */
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #2bb626;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 77, 77, 0.25);
+}
+
+.btn {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #1a922e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #20d43e;
+}
+
+.btn-secondary {
+    background-color: #fbf7f7;
+    border: 1px solid #1dca1d;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #c3e6b3;
+}
+
+.forgot-password {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #43d41e;
+}
+
+.divider {
+    border: 1px solid #e9ecef;
+    margin: 20px 0;
+}
+
+.signup-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}

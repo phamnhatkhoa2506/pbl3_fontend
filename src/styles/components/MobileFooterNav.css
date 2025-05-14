@@ -1,0 +1,39 @@
+.mobile-footer-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    display: none; /* Mặc định ẩn */
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    z-index: 1000;
+}
+
+.mobile-footer-nav a {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    flex: 1;
+}
+
+.mobile-footer-nav i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+
+/* Hiện ra khi màn hình nhỏ */
+@media (max-width: 918px) {
+    .mobile-footer-nav {
+        display: flex;
+    }
+
+    .winmart-header {
+        display: none;
+    }
+}

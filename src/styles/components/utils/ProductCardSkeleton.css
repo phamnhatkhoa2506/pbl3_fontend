@@ -1,0 +1,131 @@
+.skeleton-card {
+    background-color: #fff;
+    animation: fadeIn 0.3s ease-in;
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skeleton-image {
+    height: 160px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skeleton-badge {
+    width: 50px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    animation: shimmer 1.2s infinite;
+}
+
+.skeleton-text {
+    margin-top: 1px;
+    height: 14px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+}
+
+.skeleton-title {
+    width: 80%;
+    height: 15.8px;
+}
+
+.skeleton-subtext {
+    width: 60%;
+    height: 20px;
+}
+
+.skeleton-price {
+    width: 50%;
+    height: 18px;
+}
+
+.skeleton-button {
+    height: 24.61px;
+    width: calc(100% - 16px);
+    border-radius: 6px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .skeleton-card {
+        width: 150px;
+    }
+
+    .skeleton-image {
+        height: 150px;
+    }
+
+    .skeleton-text {
+        height: 11.95px;
+    }
+
+    .skeleton-title {
+        height: 15.19px;
+    }
+
+    .skeleton-price {
+        height: 15px;
+    }
+
+    .skeleton-button {
+        height: 21.19px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skeleton-card {
+        width: 120px;
+    }
+
+    .skeleton-image {
+        height: 120px;
+    }
+
+    .skeleton-text {
+        height: 10.03px;   
+    }
+
+    .skeleton-title {
+        height: 12.8px;
+    }
+
+    .skeleton-price {
+        height: 12px;
+    }
+
+    .skeleton-button {
+        height: 18.8px;
+    }
+}

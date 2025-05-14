@@ -1,0 +1,47 @@
+.sidebar {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    font-size: 11px;
+}
+  
+.nav-link {
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #e53935;
+    background-color: #f5f5f5;
+}
+  
+.nav-link.active {
+    font-weight: bold;
+    color: #e53935;
+    border-left: 3px solid #e53935;
+    background-color: #ffecec;
+}
+
+.customer-container {
+    display: flex;
+    height: 100vh; /* Chiều cao toàn bộ khung */
+    overflow: hidden; /* Không cho cả container scroll */
+}
+  
+.sidebar {
+    width: 240px;
+    flex-shrink: 0;
+}
+  
+.outlet-wrapper {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+  
+
+@media (max-width: 918px) {
+   .customer-container aside{
+        display: none;
+   }
+}
+  

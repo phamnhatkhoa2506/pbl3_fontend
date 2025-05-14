@@ -1,0 +1,27 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+@import 'react-lazy-load-image-component/src/effects/blur.css';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  text-align: center;       /* (Tùy chọn) Canh giữa text bên trong */
+}
+
+a {
+  transition: background 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}

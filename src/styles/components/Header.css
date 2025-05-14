@@ -1,0 +1,160 @@
+.winmart-header {
+    background-color: #3fa53b;
+    padding: 5px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.search-bar {
+    flex: 2;
+    max-width: 50%;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 30px;
+    padding: 0 20px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.header-actions button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.header-actions i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.header-actions button:hover i {
+    transform: scale(1.2);
+}
+
+.header-actions button:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-menu-custom {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 120px;
+}
+
+.dropdown-menu-custom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 8px 0;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item button {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #333;
+}
+
+.dropdown-item button:hover {
+    color: #2a8b1e;
+}
+
+/* Nút quay lại cho mobile */
+.back-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cart-btn-wrapper {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cart-btn-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.cart-badge {
+    position: absolute;
+    left: 30px;
+    color: white;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 14px;
+    height: 14px;
+    line-height: 1;
+    z-index: 10;
+    cursor: pointer;
+}
+
+@media (max-width: 918px) {
+    .back-btn {
+        display: block;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header-actions {
+        display: none !important;
+    }
+
+    .winmart-header .logo {
+        display: none !important;
+    }
+}
+

@@ -1,0 +1,38 @@
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    scrollbar-color: #389126 transparent;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+    height: 30px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.more-btn {
+    background-color: #1e790c;
+    color: #ffffff;
+}
+
+.more-btn:hover {
+    background-color: #30e60b;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        font-size: 0.6rem;
+    }
+}
+

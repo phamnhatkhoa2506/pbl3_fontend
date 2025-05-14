@@ -1,0 +1,100 @@
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    outline: 2px solid rgb(52, 170, 22);
+}
+
+.card-container {
+    width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-image-container {
+    height: 160px;
+}
+
+.card-body {
+    font-size: 0.875rem;
+}
+
+.card-body button {
+    font-size: 0.775rem;
+    padding: 2px 0 2px 0;
+    background-color: green;
+    border-radius: 6px;
+}
+
+.card-body button:hover {
+    background-color: rgb(17, 206, 17);
+}
+
+.card-body h6 {
+    font-size: 0.875rem;
+}
+
+.flying-image {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 9999;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 150px;
+    }
+
+    .card-image-container {
+        height: 150px;
+    }
+
+    .card-body {
+        font-size: 0.675rem;
+    }
+
+    .card-body button {
+        font-size: 0.675rem;
+    }
+
+    .card-body h6 {
+        font-size: 0.675rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-container {
+        width: 120px;
+    }
+
+    .card-image-container {
+        height: 120px;
+    }
+
+    .card-body {
+        font-size: 0.575rem;
+    }
+
+    .card-body button {
+        font-size: 0.575rem;
+    }
+
+    .card-body h6 {
+        font-size: 0.575rem;
+    }
+
+    .discount-price {
+        font-size: 8px !important;
+    }
+}
+
+  
